@@ -10,6 +10,9 @@ describe('capitalize', () => {
         expect(capitalize('zoo')).toBe('Zoo');
     })
 
+    test('works even if there\'s an empty string', () => {
+        expect(capitalize('')).toBe('');
+    })
     test('doesn\'t affect a word that has a capitalized first letter', () => {
         expect(capitalize('Car')).toBe('Car');
     })
